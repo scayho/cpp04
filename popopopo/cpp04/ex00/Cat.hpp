@@ -26,6 +26,9 @@ class Cat : public Animal {
         ~Cat();
         Cat(Cat const & anima);
         void makeSound() const;
+        void jo(){
+            std::cout << "yooo" << std::endl;
+        }
         Cat  &operator = (const Cat &s);
 };
 

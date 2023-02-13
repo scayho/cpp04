@@ -16,6 +16,8 @@
 #include "WrongCat.hpp"
 #include "Dog.hpp"
 
+// pointer of animal gets only his size from the dog class thats why it do not knews the functions of the derived class
+
 int main(void)
 {
     const Animal* meta = new Animal();
@@ -24,6 +26,7 @@ int main(void)
     std::cout << j->getType() << " " << std::endl;
     std::cout << i->getType() << " " << std::endl;
     i->makeSound(); //will output the cat sound!
+    // i->jo(); //will output the cat sound!
     j->makeSound();
     meta->makeSound();
     // std::cout << "-------------------------------" << std::endl;
